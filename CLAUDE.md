@@ -81,16 +81,18 @@ docs/setup.md               ← student setup guide: compiler, VS Code, Python, 
 plan/30-day-plan.md         ← day-by-day bootcamp (zero → AIO-ready, IOI on-ramp)
 plan/after-30-days.md       ← months 2–12 roadmap toward IOI
 lessons/dayNN-<topic>.md    ← expanded lesson notes (all 30 days written)
+lessons/{a,b,c}NN-<topic>.md ← months 2–12 lesson notes, one per topic (Phases A, B, C)
 solutions/<judge>/<name>/   ← sol.cpp + N.in/N.out tests (+ check.py if many answers valid)
 templates/                  ← template.cpp, bits/stdc++.h fallback, stress/ tool + example,
-                               grader/ (IOI function-style task: header, grader, stub, tests)
+                               grader/ (IOI function-style task: header, grader, stub, tests),
+                               interactive/ (local interactor runner + CSES Hidden Integer)
 tools/                      ← cxxflags.sh, run_tests.py, check_links.sh, tests/
 Makefile                    ← make test | lint | links | stress
 .github/workflows/ci.yml    ← runs make lint + make test on GCC
 ```
 
-The 30-day course is complete. Possible next step: lesson notes for the month 2–12
-topics in `plan/after-30-days.md`.
+The 30-day course and the month 2–12 lesson notes (Phases A–C of
+`plan/after-30-days.md`) are complete.
 
 ## Tooling conventions
 

@@ -13,7 +13,8 @@ bottleneck, so the course spends its time there.
 1. **Set up your computer:** [C++ setup guide for macOS and Windows](docs/setup.md).
 2. Read the [30-day plan](plan/30-day-plan.md).
 3. Follow the [lesson notes](lessons/) day by day (all 30 days are written).
-4. After Day 30: [the road to the IOI](plan/after-30-days.md).
+4. After Day 30: [the road to the IOI](plan/after-30-days.md), with lesson notes for every
+   phase (`lessons/a01`–`c05`: months 2–12).
 
 ## Repository layout
 
@@ -21,9 +22,9 @@ bottleneck, so the course spends its time there.
 |------|----------|
 | `docs/setup.md` | Installing a compiler, VS Code, Python and Git (macOS, Windows) |
 | `plan/` | 30-day bootcamp and post-bootcamp roadmap |
-| `lessons/` | Expanded notes per day (concepts, worked problem, practice, checkpoint) |
+| `lessons/` | Expanded notes per day (`dayNN-*`), then per topic for months 2–12 (`a01`–`c05`) |
 | `solutions/` | Reference C++ solutions with tests (**spoilers**: see [its README](solutions/README.md)) |
-| `templates/` | Contest starter `template.cpp`, stress-test tool, IOI-style grader example (`grader/`) |
+| `templates/` | Contest starter `template.cpp`, stress-test tool, IOI-style grader example (`grader/`), local interactor for interactive tasks (`interactive/`) |
 | `tools/` | Compiler-flag helper, solution test runner, link checker, self-tests |
 
 ## Using the tooling

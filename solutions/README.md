@@ -77,3 +77,28 @@ Run all tests with `make test-solutions`, or one problem with
 | 24 | exponentiation, exponentiation-ii, counting-divisors, common-divisors, binomial-coefficients |
 | 25 | hamiltonian-flights, elevator-rides, atcoder-dp/matching |
 | 26 | IOI tasks have no reference solutions here; see `templates/grader/` for the function-style format |
+
+## Months 2–12 (Phases A–C)
+
+Lessons `lessons/a01`–`c05`, following [the roadmap](../plan/after-30-days.md). Every
+solution below was also timed with GCC on max-size inputs (paths, stars and other worst
+cases for the trees): all under 0.2 s.
+
+| Lesson | Problems |
+|--------|----------|
+| A.1 | nearest-smaller-values, towers, increasing-subsequence |
+| A.2 | removal-game, counting-numbers, tree-distances-ii |
+| A.3 | high-score, cycle-finding, planets-queries-i |
+| B.1 | string-matching, finding-borders, finding-periods |
+| B.2 | planets-and-kingdoms, giant-pizza, flight-routes-check |
+| B.3 | range-update-queries, range-updates-and-sums, hotel-queries |
+| B.4 | distinct-values-queries |
+| B.5 | nim-game-i, nim-game-ii, stair-game |
+| B.6 | interactive: see `templates/interactive/` (CSES *Hidden Integer* with a local interactor) |
+| C.1 | finding-a-centroid, path-queries-ii, fixed-length-paths-i |
+| C.2 | download-speed, police-chase, school-dance |
+| C.3 | atcoder-dp/frog-3, monster-game-i, subarray-squares |
+| C.4 | point-location-test, line-segment-intersection, polygon-area, convex-hull |
+
+Some solutions use `__int128` for intermediate products (convex hull trick, polygon area).
+GCC and clang support it on 64-bit systems. MSVC does not, but contest judges use GCC.

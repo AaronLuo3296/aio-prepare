@@ -4,6 +4,10 @@ The bootcamp makes a strong mathematician AIO-competitive. IOI-level performance
 takes another **6–18 months** of steady work. This roadmap is ordered by dependency. Move
 on when the checkpoint is met, not when the calendar says so.
 
+Each phase has lesson notes in [`lessons/`](../lessons/) (files `a01`–`c05`), written in
+the same format as the 30 days, with tested reference solutions in
+[`solutions/`](../solutions/README.md#months-212-phases-ac).
+
 ## Weekly rhythm (≈10–12 h/week alongside school)
 
 | When | What |
@@ -25,6 +29,11 @@ Upsolving matters more than the contest itself. Most improvement happens there.
 - Finish the [AtCoder Educational DP Contest](https://atcoder.jp/contests/dp) (A–Z).
 - **Checkpoint:** a full recent AIO Senior paper at near-full marks under exam conditions.
 
+Lessons: [A.1 Monotonic stacks, LIS, multiset greedy](../lessons/a01-stacks-lis-multiset-greedy.md) ·
+[A.2 DP patterns](../lessons/a02-dp-patterns.md) ·
+[A.3 Negative weights, functional graphs](../lessons/a03-negative-weights-functional-graphs.md) ·
+[A.4 Checkpoint paper](../lessons/a04-phase-a-checkpoint.md)
+
 ## Phase B (months 4–6): IOI toolkit, part 1
 
 | Topic | Read | Notes |
@@ -38,6 +47,13 @@ Upsolving matters more than the contest itself. Most improvement happens there.
 
 - **Checkpoint:** solve IOI problems from 2010–2015 for most subtasks. Codeforces Div. 2 C
   solved reliably in contest.
+
+Lessons: [B.1 Strings](../lessons/b01-string-algorithms.md) ·
+[B.2 SCC and 2-SAT](../lessons/b02-scc-2sat.md) ·
+[B.3 Lazy segment trees](../lessons/b03-lazy-segment-trees.md) ·
+[B.4 Sqrt decomposition](../lessons/b04-sqrt-decomposition.md) ·
+[B.5 Game theory](../lessons/b05-game-theory.md) ·
+[B.6 Interactive tasks](../lessons/b06-interactive-tasks.md)
 
 ## Phase C (months 7–12): IOI toolkit, part 2 and full past papers
 
@@ -54,6 +70,12 @@ Upsolving matters more than the contest itself. Most improvement happens there.
   olympiads. Use those as additional full-length practice papers.
 - **Checkpoint:** consistent partial scores on recent IOI days. You know which subtasks are
   "free" within the first 30 minutes.
+
+Lessons: [C.1 HLD and centroid decomposition](../lessons/c01-hld-centroid.md) ·
+[C.2 Flows and matchings](../lessons/c02-flows-matchings.md) ·
+[C.3 DP optimisations](../lessons/c03-dp-optimisations.md) ·
+[C.4 Geometry and sweep line](../lessons/c04-geometry-sweep.md) ·
+[C.5 Full IOI days](../lessons/c05-full-ioi-days.md)
 
 ## Australian pathway
 
