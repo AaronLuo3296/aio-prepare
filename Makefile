@@ -16,7 +16,7 @@ test-solutions:
 	$(PYTHON) tools/run_tests.py solutions
 
 lint:
-	$(PYTHON) -m py_compile tools/*.py tools/tests/*.py templates/stress/*.py
+	$(PYTHON) -m py_compile tools/*.py tools/tests/*.py templates/stress/*.py templates/interactive/*.py
 	bash -n tools/*.sh templates/stress/stress.sh
 	@if command -v shellcheck > /dev/null; then shellcheck tools/*.sh templates/stress/stress.sh; fi
 	@if command -v ruff > /dev/null; then ruff check tools templates; fi
