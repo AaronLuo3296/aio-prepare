@@ -202,6 +202,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 ## Week 3: Graphs and trees
 
 ### Day 15: Graph representation, DFS, BFS
+- **Lesson notes:** [lessons/day15-graphs-dfs-bfs.md](../lessons/day15-graphs-dfs-bfs.md)
 - **Goal:** adjacency lists, DFS (recursive and iterative), BFS, connected components, grid flood fill.
 - **Math bridge:** everything from your graph-theory background. The handshake lemma explains
   why adjacency lists cost O(N+M).
@@ -215,12 +216,14 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** prove BFS gives shortest paths in unweighted graphs (induction on distance layers).
 
 ### Day 16: Bipartiteness, cycles, multi-source BFS
+- **Lesson notes:** [lessons/day16-bipartite-cycles-multisource.md](../lessons/day16-bipartite-cycles-multisource.md)
 - **Goal:** 2-colouring, cycle detection with parent tracking, BFS from many sources.
 - **Math bridge:** bipartite ⇔ no odd cycle (you know the proof; now the BFS layers *are* the proof).
 - **Practice:** CSES *Building Teams*, *Round Trip*, *Monsters* (multi-source BFS).
 - **Checkpoint:** *Round Trip* outputs an actual cycle, not just "yes".
 
 ### Day 17: Weighted shortest paths
+- **Lesson notes:** [lessons/day17-shortest-paths.md](../lessons/day17-shortest-paths.md)
 - **Goal:** Dijkstra with a priority queue, Bellman–Ford, Floyd–Warshall. Know when each applies.
 - **Math bridge:** Dijkstra's correctness is an extremal argument (the closest unfinalised
   vertex can't be improved).
@@ -231,6 +234,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** find a graph with a negative edge where Dijkstra fails, by hand.
 
 ### Day 18: Disjoint Set Union and minimum spanning trees
+- **Lesson notes:** [lessons/day18-dsu-mst.md](../lessons/day18-dsu-mst.md)
 - **Goal:** DSU with path compression and union by size. Kruskal's algorithm.
 - **Math bridge:** the MST cut property is an exchange argument. DSU maintains an equivalence relation.
 - **Read:** CPH ch. 15 · UG [DSU](https://usaco.guide/gold/dsu), [MST](https://usaco.guide/gold/mst) ·
@@ -240,6 +244,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** prove the cut property in five lines.
 
 ### Day 19: Directed acyclic graphs
+- **Lesson notes:** [lessons/day19-dags-toposort.md](../lessons/day19-dags-toposort.md)
 - **Goal:** topological sort (Kahn and DFS), DP on DAGs, longest/shortest paths in a DAG.
 - **Math bridge:** a partial order has a linear extension. DP needs exactly such an order.
 - **Read:** CPH ch. 16 · UG [Topological Sort](https://usaco.guide/gold/toposort) ·
@@ -248,6 +253,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** explain why *every* DP is a DAG of states.
 
 ### Day 20: Trees and tree DP
+- **Lesson notes:** [lessons/day20-trees-tree-dp.md](../lessons/day20-trees-tree-dp.md)
 - **Goal:** rooting a tree, subtree sizes, diameter, DP on trees, rerooting idea.
 - **Math bridge:** trees: N−1 edges, unique paths, leaves exist (extremal). Diameter via
   "farthest from the farthest".
@@ -257,6 +263,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** prove the double-BFS diameter algorithm is correct.
 
 ### Day 21: Mock contest #2
+- **Lesson notes:** [lessons/day21-mock-contest-2.md](../lessons/day21-mock-contest-2.md)
 - **Format:** 3 hours, a Senior-level AIO paper from [ORAC AIO Sets](https://orac2.info/hub/aio/).
 - **Afterwards:** upsolve. Compare with mock #1: which error-log categories shrank?
 

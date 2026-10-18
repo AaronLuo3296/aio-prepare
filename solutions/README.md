@@ -35,3 +35,14 @@ Run all tests with `make test-solutions`, or one problem with
 | 11 | sum-of-two-values, maximum-subarray-sum, playlist, factory-machines |
 | 12 | dice-combinations, minimizing-coins, coin-combinations-i, coin-combinations-ii, removing-digits, atcoder-dp/frog-1, atcoder-dp/frog-2 |
 | 13 | grid-paths-dp, book-shop, array-description, edit-distance, atcoder-dp/knapsack-1, atcoder-dp/lcs |
+
+## Week 3 (CSES Graph Algorithms and Tree Algorithms, AtCoder Educational DP)
+
+| Day | Problems |
+|-----|----------|
+| 15 | counting-rooms, building-roads, message-route, labyrinth |
+| 16 | building-teams, round-trip, monsters |
+| 17 | shortest-routes-i, shortest-routes-ii, flight-discount |
+| 18 | road-reparation, road-construction |
+| 19 | course-schedule, longest-flight-route, game-routes, atcoder-dp/longest-path |
+| 20 | subordinates, tree-diameter, tree-distances-i, tree-matching, atcoder-dp/independent-set |
