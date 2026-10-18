@@ -38,6 +38,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 ## Week 1: Learning to program (C++ from zero)
 
 ### Day 1: Setup, first programs, input/output
+- **Lesson notes:** [lessons/day01-setup-and-first-programs.md](../lessons/day01-setup-and-first-programs.md)
 - **Goal:** compile and run a program. Read input and print output. Submit to a judge.
 - **Math bridge:** a program is a precise algorithm, like a constructive proof with no
   gaps a machine has to fill in.
@@ -50,6 +51,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** you can explain `int` vs `long long` overflow with a concrete number.
 
 ### Day 2: Conditionals, loops, integer arithmetic
+- **Lesson notes:** [lessons/day02-control-flow.md](../lessons/day02-control-flow.md)
 - **Goal:** `if`/`else`, `for`, `while`, `%` and integer division, overflow.
 - **Math bridge:** a loop invariant is an induction hypothesis. State it for each loop you write.
 - **Read:** learncpp chapters on control flow · CPH ch. 1 (sections on C++ code, I/O, working with numbers).
@@ -59,6 +61,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** *Number Spiral* solved with a closed-form formula, not a simulation.
 
 ### Day 3: Arrays, vectors, strings, functions
+- **Lesson notes:** [lessons/day03-arrays-strings-functions.md](../lessons/day03-arrays-strings-functions.md)
 - **Goal:** `vector`, `string`, writing and calling functions, passing by reference.
 - **Math bridge:** a function is a function. Arrays are sequences aₙ, and indexing from 0
   is a shift of index.
@@ -70,6 +73,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** *Two Knights* derived on paper first, then coded in under 10 lines.
 
 ### Day 4: Time complexity and reading constraints
+- **Lesson notes:** [lessons/day04-time-complexity.md](../lessons/day04-time-complexity.md)
 - **Goal:** Big-O. Predict whether a solution passes **before** coding it.
 - **Math bridge:** asymptotics are growth rates. Counting operations is double counting.
 - **Read:** CPH ch. 2 · UG [Time Complexity](https://usaco.guide/bronze/time-comp) ·
@@ -80,6 +84,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** for each problem so far, write the complexity and the largest N it handles.
 
 ### Day 5: Simulation and complete search
+- **Lesson notes:** [lessons/day05-complete-search.md](../lessons/day05-complete-search.md)
 - **Goal:** turn a statement into code faithfully. Enumerate all cases.
 - **Math bridge:** case analysis. A computer will happily check 2²⁰ cases for you.
 - **Read:** UG [Simulation](https://usaco.guide/bronze/simulation),
@@ -89,6 +94,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** enumerate all subsets of {0..n−1} with a bitmask loop from memory.
 
 ### Day 6: Recursion and backtracking
+- **Lesson notes:** [lessons/day06-recursion-backtracking.md](../lessons/day06-recursion-backtracking.md)
 - **Goal:** recursive functions, generating permutations and subsets, pruning.
 - **Math bridge:** recursion *is* strong induction. Base case plus inductive step equals
   base case plus recursive call.
@@ -99,6 +105,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** prove the Tower of Hanoi move count 2ⁿ−1 and match it to your recursion tree.
 
 ### Day 7: Checkpoint (debugging, stress testing, first AIO taste)
+- **Lesson notes:** [lessons/day07-debugging-and-first-aio.md](../lessons/day07-debugging-and-first-aio.md)
 - **Goal:** learn to find bugs systematically. First contact with real AIO problems.
 - **Skills:** compile with `-Wall -Wextra -fsanitize=address,undefined`. Print-debugging.
   Write a brute-force solution plus a random input generator, then compare outputs in a loop.
@@ -321,7 +328,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 
 ### Day 30: Retrospective and roadmap
 - Compare scores across mocks #1–#4. Update the error log summary.
-- **What comes next (IOI track, roughly in order):** strings (CPH ch. 26: hashing, KMP/Z) →
+- **What comes next** (full roadmap: [after-30-days.md](after-30-days.md))**, IOI track, roughly in order:** strings (CPH ch. 26: hashing, KMP/Z) →
   strongly connected components (CPH ch. 17) → lazy propagation and advanced segment trees
   (CPH ch. 28, UG [Segment Tree extensions](https://usaco.guide/plat/segtree-ext)) →
   square-root techniques (CPH ch. 27) → flows (CPH ch. 20) → geometry and sweep line

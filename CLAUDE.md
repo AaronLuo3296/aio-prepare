@@ -75,13 +75,31 @@ CPH chapter numbers used throughout: 1 Intro · 2 Time complexity · 3 Sorting �
 ## Repository layout
 
 ```
-CLAUDE.md               ← this file: audience, principles, conventions, resources
-plan/30-day-plan.md     ← day-by-day bootcamp (zero → AIO-ready, IOI on-ramp)
+CLAUDE.md                   ← this file: audience, principles, conventions, resources
+README.md                   ← GitHub landing page
+plan/30-day-plan.md         ← day-by-day bootcamp (zero → AIO-ready, IOI on-ramp)
+plan/after-30-days.md       ← months 2–12 roadmap toward IOI
+lessons/dayNN-<topic>.md    ← expanded lesson notes (Week 1 written: days 01–07)
+solutions/<judge>/<name>/   ← sol.cpp + N.in/N.out tests (+ check.py if many answers valid)
+templates/                  ← template.cpp, bits/stdc++.h fallback, stress/ tool + example
+tools/                      ← cxxflags.sh, run_tests.py, check_links.sh, tests/
+Makefile                    ← make test | lint | links | stress
+.github/workflows/ci.yml    ← runs make lint + make test on GCC
 ```
 
-Planned (create when needed, keep this list updated):
-`lessons/dayNN-<topic>.md` (expanded lesson notes), `solutions/` (reference C++),
-`templates/` (starter code, stress-test script), `plan/after-30-days.md` (IOI roadmap).
+Next to write: lessons for days 08–30 and their reference solutions, then
+`templates/grader/` (IOI function-signature stub for Day 26).
+
+## Tooling conventions
+
+- Always compile through `tools/cxxflags.sh` (adds the `bits/stdc++.h` fallback and fixes
+  macOS Command Line Tools installs whose clang cannot find libc++ headers).
+- Every reference solution gets tests. Expected outputs must come from an **independent**
+  source (the judge's sample or a Python brute force), never from running `sol.cpp`.
+  Multi-answer problems get a `check.py`, verified to reject wrong outputs.
+- Every complete program (a ```cpp block containing `main`) in `lessons/` must compile.
+  `tools/tests/test_lessons.py` enforces this.
+- Run `make lint && make test` before every commit, and `make links` after adding URLs.
 
 ## Rules for editing this course
 
