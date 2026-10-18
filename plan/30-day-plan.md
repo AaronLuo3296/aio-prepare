@@ -272,6 +272,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 ## Week 4: Range queries, number theory, IOI on-ramp
 
 ### Day 22: Fenwick trees, segment trees, sparse tables
+- **Lesson notes:** [lessons/day22-range-queries.md](../lessons/day22-range-queries.md)
 - **Goal:** point-update/range-query in O(log N). Static RMQ in O(1).
 - **Math bridge:** binary representations (the low bit, `i & -i`). Idempotent operations (min) allow overlapping ranges.
 - **Read:** CPH ch. 9, 28 · UG [Point Update Range Sum](https://usaco.guide/gold/PURS) ·
@@ -284,6 +285,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** a bottom-up segment tree from memory in under 15 minutes.
 
 ### Day 23: Tree queries (Euler tour, binary lifting, LCA)
+- **Lesson notes:** [lessons/day23-tree-queries.md](../lessons/day23-tree-queries.md)
 - **Goal:** flatten a tree into an array. Jump 2ᵏ ancestors. LCA. Distances on trees.
 - **Math bridge:** every integer is a sum of distinct powers of 2 (binary lifting = fast exponentiation on ancestors).
 - **Read:** CPH ch. 18 · UG [Euler Tour](https://usaco.guide/gold/tree-euler),
@@ -293,6 +295,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** dist(u,v) = depth(u)+depth(v)−2·depth(lca). Prove it and use it.
 
 ### Day 24: Number theory and combinatorics in code
+- **Lesson notes:** [lessons/day24-number-theory.md](../lessons/day24-number-theory.md)
 - **Goal:** modular arithmetic, fast exponentiation, modular inverses (Fermat), sieve,
   divisor counting, nCr mod p with factorial tables.
 - **Math bridge:** this is home ground. Expect to finish fast and spend the extra time on the
@@ -308,6 +311,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** precompute factorials and inverse factorials up to 10⁶ in O(N).
 
 ### Day 25: Bit manipulation and bitmask DP
+- **Lesson notes:** [lessons/day25-bitmask-dp.md](../lessons/day25-bitmask-dp.md)
 - **Goal:** bit operations, DP over subsets (N ≤ 20).
 - **Math bridge:** subsets ↔ binary strings. Inclusion–exclusion over masks.
 - **Read:** CPH ch. 10 · UG [Bitmask DP](https://usaco.guide/gold/dp-bitmasks).
@@ -315,6 +319,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** explain why *Hamiltonian Flights* is O(2ᴺ·N²) and why that fits N = 20.
 
 ### Day 26: The IOI format
+- **Lesson notes:** [lessons/day26-ioi-format.md](../lessons/day26-ioi-format.md)
 - **Goal:** understand IOI-style tasks: you implement a *function* called by a grader (not
   stdin/stdout). Some tasks are interactive, output-only, or scored per subtask.
 - **Read:** [IOI syllabus](https://ioinformatics.org/page/syllabus/12) (note which topics you
@@ -326,21 +331,25 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** a template that compiles against a grader stub.
 
 ### Day 27: Mock contest #3 (full AIO simulation)
+- **Lesson notes:** [lessons/day27-mock-contest-3.md](../lessons/day27-mock-contest-3.md)
 - **Format:** the most recent AIO paper you have not seen, under strict exam conditions
   (3 h, one sitting, no internet).
 - **Afterwards:** upsolve everything.
 
 ### Day 28: Consolidation
+- **Lesson notes:** [lessons/day28-consolidation.md](../lessons/day28-consolidation.md)
 - Re-solve, **from a blank file**, five problems from your error log that you got wrong.
 - Build your personal template file: fast I/O, DSU, Dijkstra, segment tree, mod-pow,
   BFS on grid, binary search on answer.
 - Re-read the CPH chapters behind your two weakest error-log categories.
 
 ### Day 29: Mock contest #4
+- **Lesson notes:** [lessons/day29-mock-contest-4.md](../lessons/day29-mock-contest-4.md)
 - Another unseen AIO Senior paper (or an [AtCoder Beginner Contest](https://atcoder.jp/) live
   or virtual, problems A–E). Upsolve.
 
 ### Day 30: Retrospective and roadmap
+- **Lesson notes:** [lessons/day30-retrospective.md](../lessons/day30-retrospective.md)
 - Compare scores across mocks #1–#4. Update the error log summary.
 - **What comes next** (full roadmap: [after-30-days.md](after-30-days.md))**, IOI track, roughly in order:** strings (CPH ch. 26: hashing, KMP/Z) →
   strongly connected components (CPH ch. 17) → lazy propagation and advanced segment trees

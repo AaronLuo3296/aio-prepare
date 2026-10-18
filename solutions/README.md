@@ -11,6 +11,27 @@ Each problem lives in `solutions/<judge>/<problem-name>/`:
 | `N.in`, `N.out` | Tests: the judge's sample plus extra cases. Expected outputs come from independent Python brute force, not from `sol.cpp`. |
 | `check.py` | Present when many answers are valid (e.g. any permutation). It validates the output instead of comparing it exactly. |
 
+> **Portability heads-up.** The solutions avoid GCC-only extensions so they compile on
+> Apple clang too. In particular they use `31 - __builtin_clz(x)` instead of `__lg(x)`,
+> which clang rejects. Do the same in your own code if you work on a Mac without GCC.
+
+> **Small tests are not the judge.** The tests here are tiny: the judge's samples plus small
+> random cases that a Python brute force can check. They show that a solution gives the
+> **right answers**. They do not show that it is **fast enough** or fits in **memory** at the
+> real limits (N = 2·10⁵, values up to 10⁹), and that is where the judge's hidden tests
+> fail most solutions: TLE, MLE, overflow on large sums, stack overflow from deep recursion.
+> A solution that passes `make test` can still fail on the judge. Before submitting your
+> own code:
+> 1. Check the complexity against the constraints (Day 4 table: about 10⁸ simple steps/s).
+> 2. Generate one **max-size** input (e.g. a Python script printing N = 2·10⁵ random
+>    values, or a path graph for recursion depth) and time it **without** sanitizers:
+>    `g++ $(tools/cxxflags.sh) sol.cpp -o sol && time ./sol < big.txt`.
+> 3. Submit to the judge. Only "Accepted" on the judge counts.
+>
+> Every Week 4 solution was timed this way with GCC on max-size inputs (all under 0.3 s).
+> On a Mac with Apple clang, `cin` is much slower, so local times there look worse than on
+> the judge (see the [setup guide](../docs/setup.md#daily-workflow)).
+
 Run all tests with `make test-solutions`, or one problem with
 `python3 tools/run_tests.py solutions/cses/two-knights`.
 
@@ -46,3 +67,13 @@ Run all tests with `make test-solutions`, or one problem with
 | 18 | road-reparation, road-construction |
 | 19 | course-schedule, longest-flight-route, game-routes, atcoder-dp/longest-path |
 | 20 | subordinates, tree-diameter, tree-distances-i, tree-matching, atcoder-dp/independent-set |
+
+## Week 4 (CSES Range Queries/Tree Algorithms/Mathematics/DP, AtCoder Educational DP)
+
+| Day | Problems |
+|-----|----------|
+| 22 | static-range-minimum-queries, dynamic-range-sum-queries, dynamic-range-minimum-queries, range-xor-queries |
+| 23 | company-queries-i, company-queries-ii, distance-queries, subtree-queries |
+| 24 | exponentiation, exponentiation-ii, counting-divisors, common-divisors, binomial-coefficients |
+| 25 | hamiltonian-flights, elevator-rides, atcoder-dp/matching |
+| 26 | IOI tasks have no reference solutions here; see `templates/grader/` for the function-style format |

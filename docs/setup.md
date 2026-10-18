@@ -56,6 +56,12 @@ make test
   xcode-select --install
   ```
 
+> **Heads-up: GCC-only extensions.** Some tricks in other people's contest code work only
+> with GCC (the judges' compiler), not with Apple clang. The most common one is `__lg(x)`
+> (⌊log₂ x⌋), which fails with `use of undeclared identifier '__lg'`. Write
+> `31 - __builtin_clz(x)` instead (`63 - __builtin_clzll(x)` for `long long`). It works with
+> both compilers. Code in this repo avoids GCC-only extensions, so it compiles on both.
+
 ### 4. Optional: real GCC (identical to the judges)
 
 Install [Homebrew](https://brew.sh/), then:
@@ -144,6 +150,17 @@ make stress SOL=work/a.cpp BRUTE=work/brute.cpp GEN=work/gen.py   # hunt bugs (D
 
 Drop `-fsanitize=...` on MinGW. Remove it, too, when timing a solution: sanitizers make
 code several times slower.
+
+> **Heads-up: passing the samples is not "Accepted".** Samples and small random tests
+> check that your answers are right. They do not check speed, memory or overflow at the
+> real limits, which is what the judge's hidden tests do. Before you submit, time one
+> max-size input (without sanitizers), and treat only the judge's verdict as final.
+> The same applies to `make test` on the reference solutions in this repo.
+>
+> **On a Mac, timings with Apple clang can mislead.** Its `cin` can be 10× or more slower
+> than GCC's, even with `sync_with_stdio(false)`. A solution that reads 2·10⁵ numbers
+> may take about 1 s locally but under 0.1 s on the judge. If your timing looks slow, use
+> GCC (step 4 above) or `scanf` before you decide your algorithm is too slow.
 
 ## Checklist
 

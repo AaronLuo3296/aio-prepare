@@ -80,16 +80,17 @@ README.md                   ← GitHub landing page
 docs/setup.md               ← student setup guide: compiler, VS Code, Python, Git (macOS/Windows)
 plan/30-day-plan.md         ← day-by-day bootcamp (zero → AIO-ready, IOI on-ramp)
 plan/after-30-days.md       ← months 2–12 roadmap toward IOI
-lessons/dayNN-<topic>.md    ← expanded lesson notes (Weeks 1–3 written: days 01–21)
+lessons/dayNN-<topic>.md    ← expanded lesson notes (all 30 days written)
 solutions/<judge>/<name>/   ← sol.cpp + N.in/N.out tests (+ check.py if many answers valid)
-templates/                  ← template.cpp, bits/stdc++.h fallback, stress/ tool + example
+templates/                  ← template.cpp, bits/stdc++.h fallback, stress/ tool + example,
+                               grader/ (IOI function-style task: header, grader, stub, tests)
 tools/                      ← cxxflags.sh, run_tests.py, check_links.sh, tests/
 Makefile                    ← make test | lint | links | stress
 .github/workflows/ci.yml    ← runs make lint + make test on GCC
 ```
 
-Next to write: lessons for days 22–30 and their reference solutions, then
-`templates/grader/` (IOI function-signature stub for Day 26).
+The 30-day course is complete. Possible next step: lesson notes for the month 2–12
+topics in `plan/after-30-days.md`.
 
 ## Tooling conventions
 
