@@ -80,7 +80,7 @@ README.md                   ← GitHub landing page
 docs/setup.md               ← student setup guide: compiler, VS Code, Python, Git (macOS/Windows)
 plan/30-day-plan.md         ← day-by-day bootcamp (zero → AIO-ready, IOI on-ramp)
 plan/after-30-days.md       ← months 2–12 roadmap toward IOI
-lessons/dayNN-<topic>.md    ← expanded lesson notes (Week 1 written: days 01–07)
+lessons/dayNN-<topic>.md    ← expanded lesson notes (Weeks 1–2 written: days 01–14)
 solutions/<judge>/<name>/   ← sol.cpp + N.in/N.out tests (+ check.py if many answers valid)
 templates/                  ← template.cpp, bits/stdc++.h fallback, stress/ tool + example
 tools/                      ← cxxflags.sh, run_tests.py, check_links.sh, tests/
@@ -88,7 +88,7 @@ Makefile                    ← make test | lint | links | stress
 .github/workflows/ci.yml    ← runs make lint + make test on GCC
 ```
 
-Next to write: lessons for days 08–30 and their reference solutions, then
+Next to write: lessons for days 15–30 and their reference solutions, then
 `templates/grader/` (IOI function-signature stub for Day 26).
 
 ## Tooling conventions

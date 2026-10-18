@@ -119,6 +119,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 ## Week 2: Core techniques
 
 ### Day 8: Sorting and the standard library
+- **Lesson notes:** [lessons/day08-sorting-and-stl.md](../lessons/day08-sorting-and-stl.md)
 - **Goal:** `sort` with custom comparators, `set`, `map`, `multiset`, `pair`.
 - **Math bridge:** ordering creates structure (extremal principle). Many problems become
   trivial once sorted.
@@ -129,6 +130,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
   (decision-tree counting argument).
 
 ### Day 9: Greedy algorithms and exchange arguments
+- **Lesson notes:** [lessons/day09-greedy.md](../lessons/day09-greedy.md)
 - **Goal:** spot greedy structure and **prove** it before trusting it.
 - **Math bridge:** this is the exchange argument / extremal principle you already know.
   Greedy without proof is guessing.
@@ -140,6 +142,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** a written exchange-argument proof for *Movie Festival*.
 
 ### Day 10: Prefix sums and difference arrays
+- **Lesson notes:** [lessons/day10-prefix-sums.md](../lessons/day10-prefix-sums.md)
 - **Goal:** O(1) range sums after O(N) preprocessing. 2D prefix sums.
 - **Math bridge:** telescoping sums. Pigeonhole on prefix sums mod k.
 - **Read:** UG [Prefix Sums](https://usaco.guide/silver/prefix-sums) · CPH ch. 9.1.
@@ -148,6 +151,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** solve *Subarray Divisibility* and name the classical olympiad lemma it uses.
 
 ### Day 11: Two pointers and binary search
+- **Lesson notes:** [lessons/day11-two-pointers-binary-search.md](../lessons/day11-two-pointers-binary-search.md)
 - **Goal:** two pointers on sorted data. Binary search on a monotone predicate
   ("binary search the answer").
 - **Math bridge:** monotone functions and the intermediate value idea. Bisection.
@@ -161,6 +165,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
   good" and never get stuck in an infinite loop.
 
 ### Day 12: Dynamic programming I
+- **Lesson notes:** [lessons/day12-dp-intro.md](../lessons/day12-dp-intro.md)
 - **Goal:** state, transition, base case, order of evaluation. Memoisation vs tabulation.
 - **Math bridge:** DP is recurrences plus induction. You have solved "count the number of
   ways…" problems with recurrences for years. Now the computer evaluates them.
@@ -173,6 +178,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
 - **Checkpoint:** explain the Coin Combinations I/II difference as a bijection argument.
 
 ### Day 13: Dynamic programming II (knapsack, grids, sequences)
+- **Lesson notes:** [lessons/day13-dp-knapsack-grids-sequences.md](../lessons/day13-dp-knapsack-grids-sequences.md)
 - **Goal:** 2D DP, knapsack, LCS and edit distance, LIS in O(N log N).
 - **Math bridge:** lattice-path counting (grid DP), extremal subsequences (Erdős–Szekeres ↔ LIS).
 - **Read:** UG [Knapsack](https://usaco.guide/gold/knapsack),
@@ -184,6 +190,7 @@ N ≤ 10 → N! · N ≤ 20 → 2ᴺ · N ≤ 500 → N³ · N ≤ 5 000 → N²
   W downwards is required.
 
 ### Day 14: Mock contest #1
+- **Lesson notes:** [lessons/day14-mock-contest-1.md](../lessons/day14-mock-contest-1.md)
 - **Format:** 3 hours, timed, one full AIO paper from [ORAC AIO Sets](https://orac2.info/hub/aio/)
   (choose an Intermediate-level year). No notes except your own templates.
 - **Afterwards:** upsolve every problem (read official solutions on ORAC where available).

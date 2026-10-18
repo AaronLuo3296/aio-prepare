@@ -12,8 +12,8 @@ bottleneck, so the course spends its time there.
 
 1. **Set up your computer:** [C++ setup guide for macOS and Windows](docs/setup.md).
 2. Read the [30-day plan](plan/30-day-plan.md).
-3. Follow the lesson notes day by day: [Week 1](lessons/) is written. Later weeks follow the
-   plan directly.
+3. Follow the lesson notes day by day: [Weeks 1–2](lessons/) (days 1–14) are written. Later weeks follow
+   the plan directly.
 4. After Day 30: [the road to the IOI](plan/after-30-days.md).
 
 ## Repository layout

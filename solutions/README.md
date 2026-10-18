@@ -24,3 +24,14 @@ Run all tests with `make test-solutions`, or one problem with
 | 4 | bit-strings, coin-piles, two-sets, gray-code |
 | 5 | apple-division, creating-strings |
 | 6 | tower-of-hanoi, chessboard-and-queens (+ recursive permutations) |
+
+## Week 2 (CSES Sorting/Searching/DP, AtCoder Educational DP)
+
+| Day | Problems |
+|-----|----------|
+| 8 | distinct-numbers, apartments, ferris-wheel, concert-tickets |
+| 9 | movie-festival, restaurant-customers, stick-lengths, tasks-and-deadlines |
+| 10 | static-range-sum-queries, subarray-sums-i, subarray-sums-ii, subarray-divisibility |
+| 11 | sum-of-two-values, maximum-subarray-sum, playlist, factory-machines |
+| 12 | dice-combinations, minimizing-coins, coin-combinations-i, coin-combinations-ii, removing-digits, atcoder-dp/frog-1, atcoder-dp/frog-2 |
+| 13 | grid-paths-dp, book-shop, array-description, edit-distance, atcoder-dp/knapsack-1, atcoder-dp/lcs |
