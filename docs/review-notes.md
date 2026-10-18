@@ -55,7 +55,8 @@ The audience reads proofs closely. A wrong argument costs more trust than a miss
 
 ## 6. Known gaps (deliberate or to-do)
 
-- **No "Watch" line** in lessons `a01`–`c05`. The CLAUDE.md template requires
-  Goal · Math bridge · Read · Watch · Practice · Checkpoint.
+- **No "Watch" line** in lessons `a01`–`c05`. The day entries in `plan/30-day-plan.md` each
+  have one, so phase students get no video pointers. Optional: add verified channel or
+  playlist pages, not single video IDs, which rot.
 - B.4 has one reference solution. The other lessons have about three each.
 - B.6 and C.5 have no solutions by design (interactive and full-paper practice).
