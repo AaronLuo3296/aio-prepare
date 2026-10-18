@@ -7,6 +7,7 @@ Layout of a problem directory (anywhere under solutions/):
                    `python3 check.py N.in actual_output_file N.out`; exit 0 = accepted
 
 Usage: python3 tools/run_tests.py [path ...]   (default: solutions/)
+Environment: CXX (default g++), SANITIZE=0 to skip sanitizers (MinGW on Windows lacks them).
 """
 from __future__ import annotations
 
@@ -52,9 +53,9 @@ def find_problems(paths: list[Path]) -> list[Path]:
 
 
 def compile_solution(problem: Path, binary: Path, cxx: str, flags: list[str]) -> str | None:
+    sanitize = [] if os.environ.get("SANITIZE") == "0" else ["-fsanitize=address,undefined"]
     proc = subprocess.run(
-        [cxx, *flags, "-Werror", "-fsanitize=address,undefined",
-         str(problem / "sol.cpp"), "-o", str(binary)],
+        [cxx, *flags, "-Werror", *sanitize, str(problem / "sol.cpp"), "-o", str(binary)],
         capture_output=True, text=True,
     )
     return None if proc.returncode == 0 else proc.stderr

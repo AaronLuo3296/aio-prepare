@@ -10,15 +10,17 @@ bottleneck, so the course spends its time there.
 
 ## Start here
 
-1. Read the [30-day plan](plan/30-day-plan.md).
-2. Follow the lesson notes day by day: [Week 1](lessons/) is written. Later weeks follow the
+1. **Set up your computer:** [C++ setup guide for macOS and Windows](docs/setup.md).
+2. Read the [30-day plan](plan/30-day-plan.md).
+3. Follow the lesson notes day by day: [Week 1](lessons/) is written. Later weeks follow the
    plan directly.
-3. After Day 30: [the road to the IOI](plan/after-30-days.md).
+4. After Day 30: [the road to the IOI](plan/after-30-days.md).
 
 ## Repository layout
 
 | Path | Contents |
 |------|----------|
+| `docs/setup.md` | Installing a compiler, VS Code, Python and Git (macOS, Windows) |
 | `plan/` | 30-day bootcamp and post-bootcamp roadmap |
 | `lessons/` | Expanded notes per day (concepts, worked problem, practice, checkpoint) |
 | `solutions/` | Reference C++ solutions with tests (**spoilers**: see [its README](solutions/README.md)) |
@@ -27,7 +29,8 @@ bottleneck, so the course spends its time there.
 
 ## Using the tooling
 
-Requires a C++17 compiler (`g++` or Apple clang) and Python 3.
+Requires a C++17 compiler (`g++` or Apple clang), Python 3 and `make`. See the
+[setup guide](docs/setup.md). On Windows with MinGW, prefix commands with `SANITIZE=0`.
 
 ```sh
 make test     # tool self-tests + compile/run every reference solution on its tests

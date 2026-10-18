@@ -77,6 +77,7 @@ CPH chapter numbers used throughout: 1 Intro · 2 Time complexity · 3 Sorting �
 ```
 CLAUDE.md                   ← this file: audience, principles, conventions, resources
 README.md                   ← GitHub landing page
+docs/setup.md               ← student setup guide: compiler, VS Code, Python, Git (macOS/Windows)
 plan/30-day-plan.md         ← day-by-day bootcamp (zero → AIO-ready, IOI on-ramp)
 plan/after-30-days.md       ← months 2–12 roadmap toward IOI
 lessons/dayNN-<topic>.md    ← expanded lesson notes (Week 1 written: days 01–07)

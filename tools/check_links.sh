@@ -5,7 +5,10 @@ set -uo pipefail
 
 root=$(cd "$(dirname "$0")/.." && pwd)
 failed=0
+# The course's own repository may be private (404 to anonymous requests): skip it.
+own_repo=$(git -C "$root" remote get-url origin 2> /dev/null | sed 's/\.git$//')
 while IFS= read -r url; do
+    if [[ -n $own_repo && $url == "$own_repo"* ]]; then continue; fi
     code=$(curl -s -o /dev/null -L -m 20 -A 'Mozilla/5.0' -w '%{http_code}' "$url")
     if [[ $code != 200 ]]; then
         echo "$code $url"

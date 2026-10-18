@@ -54,6 +54,12 @@ class RunProblemIntegrationTest(unittest.TestCase):
     def test_checker_accepts_alternative_answer(self):
         self.assertTrue(all(r.ok for r in self.run_problem("any-order")))
 
+    def test_runs_without_sanitizers_when_disabled(self):
+        env = dict(run_tests.os.environ, SANITIZE="0")
+        proc = subprocess.run([sys.executable, str(ROOT / "tools" / "run_tests.py"),
+                               str(FIXTURES / "sum-ok")], capture_output=True, env=env)
+        self.assertEqual(proc.returncode, 0)
+
     def test_cli_exit_code_reflects_failures(self):
         ok = subprocess.run([sys.executable, str(ROOT / "tools" / "run_tests.py"),
                              str(FIXTURES / "sum-ok")], capture_output=True)

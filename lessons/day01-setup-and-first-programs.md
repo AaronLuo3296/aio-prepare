@@ -28,12 +28,9 @@ Never print prompts like `"Enter n:"`. The judge reads your output literally.
 1. **Zero install (start here):** open the [USACO Guide IDE](https://ide.usaco.guide/), choose
    C++, paste code, press Run. Also read UG
    [Running Code Online](https://usaco.guide/general/running-code-online).
-2. **Local (do this by Day 3).** Install VS Code and a compiler:
-   - macOS: run `xcode-select --install` in Terminal, then follow
-     [VS Code: Clang on macOS](https://code.visualstudio.com/docs/cpp/config-clang-mac).
-   - Windows: [VS Code: GCC with MinGW](https://code.visualstudio.com/docs/cpp/config-mingw).
-   - Clone this repository and run `make test`. If it prints `0 failing case(s)`, your
-     setup works.
+2. **Local (do this by Day 3).** Follow the step-by-step
+   [setup guide for macOS and Windows](../docs/setup.md). It ends with running
+   `make test` in this repository; when that prints `0 failing case(s)`, you are ready.
 
 Compile and run from a terminal (inside this repo):
 
